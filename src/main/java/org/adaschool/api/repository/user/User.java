@@ -113,4 +113,8 @@ public class User implements Serializable {
     public int hashCode() {
         return Objects.hash(id, name, lastName, email, passwordHash, createdAt);
     }
+
+    public String getPasswordHash() {
+        return this.passwordHash;
+    }
 }
